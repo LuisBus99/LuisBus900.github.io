@@ -24,8 +24,8 @@
 
   header img {
     margin: 0 auto;
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
   }
 
   nav {
@@ -157,6 +157,8 @@
   .center-image img {
     max-width: 100%;
     height: auto;
+    width: 10vw;
+    height: 10vw;
   }
 
   footer {
