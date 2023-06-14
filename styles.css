@@ -24,8 +24,8 @@
 
   header img {
     margin: 0 auto;
-    width: 10vw;
-    height: 10vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   nav {
@@ -152,13 +152,10 @@
   .center-image {
     text-align: center;
     margin-bottom: 30px;
-  }
-
-  .center-image img {
     max-width: 100%;
     height: auto;
-  
   }
+
 
   footer {
     text-align: center;
