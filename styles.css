@@ -22,7 +22,7 @@
     color: #F8B500;
   }
 
-  .header img {
+  header img {
     margin: 0 auto;
     width: 20vw;
     height: 20vw;
@@ -40,7 +40,7 @@
   }
 
   nav ul li {
-    display: inline-block;
+_    display: inline-block;
     margin-right: 20px;
   }
 
@@ -152,10 +152,12 @@
   .center-image {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .center-image img {
     max-width: 100%;
     height: auto;
   }
-
 
   footer {
     text-align: center;
@@ -302,4 +304,3 @@
     margin-top: 30px;
   }
 }
-
