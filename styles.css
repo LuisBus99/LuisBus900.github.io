@@ -162,7 +162,7 @@ _    display: inline-block;
   footer {
     font-size: 1vw;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 
