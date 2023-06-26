@@ -14,6 +14,7 @@ header {
   background-color: #ffffff;
   font-size: 3vw;
   font-family: 'Dancing Script', cursive;
+
   }
 
 /* Add your CSS styling for the header image here */
@@ -107,7 +108,7 @@ margin-left:5vw;
 }
 	
 
-.paragraph10{
+.paragraph0{
 	
   font-size: 2vw;
   text-align: justify;
@@ -150,6 +151,26 @@ margin-left:5vw;
 .center-image img {
   width: 10vw;
   height: 10vw;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.whatsapp-button {
+  display:  inline-block;
+  padding: 10px 5px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+    
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;    
 }
 
 footer {
@@ -293,6 +314,26 @@ footer {
     max-width: 100%;
     font-family: 'Pangolin', cursive;
   }
+
+.button-container {
+  text-align: center;
+}
+
+.whatsapp-button {
+  display:  inline-block;
+  padding: 10px 5px;
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+    
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;    
+}
 
   footer {
     font-size: 3vw;
