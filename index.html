@@ -41,28 +41,40 @@
       </p>
 	</section>
 	  
-	  
-   <section id="section2">
-    <h3>Our Products</h3>
-      <div class="product-container">
-        <div class="product">
-          <img src="Product1.jpeg" alt="Product 1">
-          <p class="paragraph1">Clicker de plastico con muñeca adjustable.</p>
-        </div>
-        <div class="product">
-          <img src="Product2.jpeg" alt="Product 2">
-          <p class="paragraph2">Pet oral Cleanse Spray 50 Ml.</p>
-        </div>
-        <div class="product">
-          <img src="Product3.jpeg" alt="Product 3">
-          <p class="paragraph3">Mini GPS and BLE tracking Device.</p>
-        </div>
-        <div class="product">
-          <img src="Product4.jpeg" alt="Product 4">
-          <p class="paragraph4">Bebedor de facil uso de 500 ML .</p>
-        </div>
-      </div>
-    </section>
+	  <section id="section2">
+  <h3>Our Products</h3>
+  <div class="product-container">
+    <div class="product">
+      <img src="Product1.jpeg" alt="Product 1" class="slideshow-image">
+      <p class="paragraph1">Clicker de plastico con muñeca adjustable.</p>
+    </div>
+    <div class="product">
+      <img src="Product2.jpeg" alt="Product 2" class="slideshow-image">
+      <p class="paragraph2">Pet oral Cleanse Spray 50 Ml.</p>
+    </div>
+    <div class="product">
+      <img src="Product3.jpeg" alt="Product 3" class="slideshow-image">
+      <p class="paragraph3">Mini GPS and BLE tracking Device.</p>
+    </div>
+    <div class="product">
+      <img src="Product4.jpeg" alt="Product 4" class="slideshow-image">
+      <p class="paragraph4">Bebedor de facil uso de 500 ML .</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  var images = ["Product1.jpeg", "Product2.jpeg", "Product3.jpeg", "Product4.jpeg"];
+  var currentIndex = 0;
+  var slideshowImages = document.getElementsByClassName("slideshow-image");
+
+  setInterval(function() {
+    currentIndex = (currentIndex + 1) % images.length;
+    for (var i = 0; i < slideshowImages.length; i++) {
+      slideshowImages[i].src = images[currentIndex];
+    }
+  }, 5000); // Change image every 5 seconds (5000 milliseconds)
+</script>
 
     <section id="section3">
       <h4>Contact Us</h4>
