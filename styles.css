@@ -111,7 +111,7 @@ margin-left:5vw;
 .paragraph10{
 	
   font-size: 3vw;
-  text-align: justify;
+  text-align: center;
   max-width: 100%;
   font-family: 'Pangolin', cursive;
 	
@@ -179,6 +179,8 @@ footer {
   margin-top: 0;
 }
 }
+
+
 
 /* Responsive styles */
 @media screen and (max-width: 800px) {
