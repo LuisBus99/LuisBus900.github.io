@@ -4,27 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paws OnTheGo Store!</title>
-	<link rel="stylesheet" href="styles.css">
-	
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
   <header>
     <img src="logoPOG.jpeg" class="header-image">
     <h1> PET Outdoor Gear</h1>
   </header>
   
   <!-- Burger menu -->
-  
- <nav>
-  <div class="burger-menu" onclick="toggleMenu()">
-    <div class="burger-bar"></div>
-    <div class="burger-bar"></div>
-    <div class="burger-bar"></div>
-  </div>
-
- 
-    <div class="burger-menu"></div>
+  <nav>
+    <div class="burger-menu" onclick="toggleMenu()">
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
+      <div class="burger-bar"></div>
+    </div>
     <ul class="nav-menu">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -34,20 +28,22 @@
   </nav>
  
   <main>
-    <section>
+    <section id="section1">
       <h2>About Us</h2>
-      <p class="paragraph1">
-	Tu mascota te acompaña en tus momentos más importantes, también en tus aventuras. Hacemos que vuestras escapadas sean cómodas, seguras e inteligentes. 	 
-    <p class="paragraph1">
-	Nos enfocamos en ofrecer una amplia gama de accesorios innovadores y de alta calidad para garantizar la comodidad, seguridad y bienestar de tu perro, sin importar dónde te encuentres.
-	<p class="paragraph1">
-	Nuestros productos incluyen sistemas de suministro de agua portátiles, dispositivos de localización GPS y clickers de entrenamiento, diseñados para satisfacer las necesidades de los dueños de perros activos y aventureros      </p>
-
-	
+      <p class="paragraph0">
+        Tu mascota te acompaña en tus momentos más importantes, también en tus aventuras. Hacemos que vuestras escapadas sean cómodas, seguras e inteligentes. 	 
+      </p>
+      <p class="paragraph0">
+        Nos enfocamos en ofrecer una amplia gama de accesorios innovadores y de alta calidad para garantizar la comodidad, seguridad y bienestar de tu perro, sin importar dónde te encuentres.
+      </p>
+      <p class="paragraph0">
+        Nuestros productos incluyen sistemas de suministro de agua portátiles, dispositivos de localización GPS y clickers de entrenamiento, diseñados para satisfacer las necesidades de los dueños de perros activos y aventureros.
+      </p>
 	</section>
-         
-    <section>
-      <h3>Our Products</h3>
+	  
+	  
+   <section id="section2">
+    <h3>Our Products</h3>
       <div class="product-container">
         <div class="product">
           <img src="Product1.jpeg" alt="Product 1">
@@ -68,13 +64,13 @@
       </div>
     </section>
 
-    <section>
+    <section id="section3">
       <h4>Contact Us</h4>
       <p class="paragraph5">Email: pawsonthegoshopcol@gmail.com</p>
       <p class="paragraph6">Phone: +573219697627</p>
     </section>
     
-    <section class="center-image">
+    <section id="section4" class="center-image">
       <img src="logoPOG.jpeg">
     </section>
 
@@ -84,7 +80,7 @@
     <p class="paragraph7">&copy; 2023 Paws OnTheGo Store. All rights reserved.</p>
   </footer>
 
-    <script>
+  <script>
     function toggleMenu(){
       var menu = document.getElementById("menu");
       menu.classList.toggle("open");
@@ -92,4 +88,3 @@
   </script>
 </body>
 </html>
-
