@@ -15,11 +15,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fc8940;
+    background-color: #ffffff;
     justify-content: space-between;
     font-size: 3vw;
     font-family: 'Dancing Script', cursive;
-    fonnt-color: #FFFFFF;
+    fonnt-color: #fc8940;
   }
 
   header img {
