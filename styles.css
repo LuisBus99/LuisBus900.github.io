@@ -119,7 +119,7 @@ margin-left:5vw;
 	
 .paragraph1,.paragraph2,.paragraph2, .paragraph3, .paragraph4,.paragraph5, .paragraph6{
   font-size: 2vw;
-  text-align: center;
+  text-align: center-left;
   max-width: 100%;
   font-family: 'Pangolin', cursive;
 }
@@ -131,10 +131,10 @@ margin-left:5vw;
 }
 
 .product {
-  padding: 2vw;
+  padding: 1vw;
   border: 0.8vw dotted #1A1A1A;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 5vw;
 }
 
 .product img {
@@ -298,7 +298,7 @@ text-align: center;
 	
 .paragraph1,.paragraph2,.paragraph2, .paragraph3, .paragraph4,.paragraph5, .paragraph6{
   font-size: 2vw;
-  text-align: center;
+  text-align: center-left;
   max-width: 100%;
   font-family: 'Pangolin', cursive;
 }
@@ -317,9 +317,9 @@ text-align: center;
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
-  max-height: 20vw;
+  max-width: 100px;
+  height: 100px;
+  max-height: 100px;
 }
 
 .center-image {
