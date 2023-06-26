@@ -158,7 +158,8 @@ _    display: inline-block;
 
   .center-image img {
     max-width: 10vw;
-    height: 15vw;
+    height: 10vw;
+    align-items: center;
   }
 
   footer {
@@ -237,7 +238,7 @@ _    display: inline-block;
     margin-bottom: 30px;
     width: 10vw;
     height: 10vw;
-    align-items: center;
+    
   }
 
   .center-image img {
