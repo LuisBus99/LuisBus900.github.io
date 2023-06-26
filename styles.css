@@ -152,13 +152,14 @@ _    display: inline-block;
   .center-image {
     text-align: center;
     margin-bottom: 30px;
+    margin: 0 auto;
     
   }
 
   .center-image img {
     width: 10vw;
     height: 10vw;
-    margin: 0 auto;
+    
     
   }
 
