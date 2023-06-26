@@ -306,7 +306,7 @@ text-align: center;
 .product-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  gap: 0px;
+  gap: 1vw;
 }
 
 .product {
