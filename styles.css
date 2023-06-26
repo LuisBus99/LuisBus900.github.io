@@ -16,11 +16,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fc8940;
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
     justify-content: space-between;
     font-size: 3vw;
     font-family: 'Dancing Script', cursive;
-    color: #F8B500;
+    fonnt-color: #F8B500;
   }
 
   header img {
