@@ -59,6 +59,7 @@
   }
 </style>
 
+
 <section id="section2">
   <h3>Our Products</h3>
   <div class="slideshow-container">
@@ -72,7 +73,6 @@
 </section>
 
 <script>
-
   var products = [
     {
       image: "Product1.jpeg",
@@ -92,18 +92,16 @@
     }
   ];
 
-
   var currentIndex = 0;
   var slideshowImage = document.querySelector(".slideshow-image");
   var slideshowText = document.querySelector(".slideshow-text");
 
   setInterval(function() {
     currentIndex = (currentIndex + 1) % products.length;
-    slideshowImage.src = products[currentIndex];
-    slideshowText.innerHTML = "<p>Product " + (currentIndex + 1) + "</p>";
+    slideshowImage.src = products[currentIndex].image;
+    slideshowText.innerHTML = "<p>" + products[currentIndex].description + "</p>";
   }, 5000); // Change image every 5 seconds (5000 milliseconds)
 </script>
-
     <section id="section3">
       <h4>Contact Us</h4>
       <p class="paragraph5">Email: pawsonthegoshopcol@gmail.com</p>
