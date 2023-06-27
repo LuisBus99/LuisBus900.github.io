@@ -68,8 +68,10 @@ section {
 /* Styling for Section 2 */
 #section2 {
   background-color: #F8B500; /* Change the background color as desired */
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
+  border: 1.5vw solid #1A1A1A;
+
 }
 
 /* Styling for Section 3 */
@@ -85,10 +87,12 @@ section {
 
 h1
 {
-  margin-left: 3vw;
+  margin-left: 4vw;
   text-align:left;
   font-size: 9vw;
   color: #fc8940;
+  text-stroke: 2px #000000;
+  -webkit-text-stroke: 0.07vw #000000;
     
 }
 
@@ -99,12 +103,22 @@ h3{
   margin-top: 1vw;
 }
 
-h2, h4
+h2,h4
 {
 text-align: center;
- font-size: 3vw;
+ font-size: 4vw;
  color: #F8B500;
+ margin-bottom: 5vw;
+ 
 }
+/* h4 */
+/* { */
+/* text-align: ; */
+ /* font-size: 4vw; */
+ /* color: #F8B500; */
+ /* margin-bottom: 5vw; */
+ 
+/* } */
 
 .header-image
 {
@@ -129,59 +143,83 @@ margin-left:5vw;
   font-family: 'Pangolin', cursive;
 }
 
-.paragraph5,.paragraph8,.paragraph6{
+.paragraph5,.paragraph6{
   font-size: 2vw;
   text-align: center;
   max-width: 100%;
   font-family: 'Pangolin', cursive;
 }
 
-.product-container {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 5px;
-}
-
-.product {
-  padding: 1vw;
-  border: 0.8vw dotted #1A1A1A;
+.paragraph7{
+	
+  font-size: 1vw;
   text-align: center;
-  border-radius: 5vw;
-}
-
-.product img {
-  max-width: 10vw;
-  max-height: 10vw;
+  max-width: 100%;
+  font-family: 'Pangolin', cursive;
+	
 }
 
 .center-image {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1vw;
 }
 
 .center-image img {
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
 }
+
 
 .button-container {
-  text-align: center;
+  /* text-align: center ; */
+  position:fixed;
+  bottom: 1vw;
+  right: 1vw;
+  display: inline-block;
+  justify-content: center;
+  padding: 0px 0px;
+  background-color: #transparent; /* Change to desired background color */
+  color: #000000; /* Change to desired text color */
+  border-radius: 1vw;
+  margin-right: 10px; /* Adjust as needed */
 }
 
-.whatsapp-button {
-  display:inline-block;
-  padding: 10px 5px;
-  background-color: #25D366;
-  color: #fff;
+.whatsapp-button, .instagram-button  {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px;
+  background-color: #transparent; /* Change to desired background color */
+  color: #000000; /* Change to desired text color */
   text-decoration: none;
   border-radius: 5px;
-    
+  margin-right: 1px; /* Adjust as needed */
+  opacity: 0;
+  animation: fade-in 2s forwards;
 }
 
-.whatsapp-button img {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;    
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.whatsapp-button img{
+  width: 4vw;
+  height: 4w;
+  margin-right: 0.5vw;    
+}
+
+.instagram-button  img{
+  width: 4.4vw;
+  height: 4.4vw;
+  margin-right: 0.5vw;   
+ 
 }
 
 <style>
@@ -199,8 +237,9 @@ margin-left:5vw;
   }
 
   .slideshow-image {
-    max-width: 75%;
+    max-width: 100%;
     max-height: 40vw; /* Adjust the height as per your requirement */
+	border: 1vw solid #1A1A1A; 
     
   }
 
@@ -211,8 +250,14 @@ margin-left:5vw;
     margin-top:2vw;
     
   }
-  
+   
 </style>
+
+.phone-link{
+  color: #1A1A1A;
+  font-weight: bold;
+  text-align:center;
+}
 
 .footer-text{
   font-size: 1vw;
@@ -221,7 +266,6 @@ margin-left:5vw;
 }
 }
 
-/* Responsive styles */
 /* Responsive styles */
 @media screen and (max-width: 800px) {
 
