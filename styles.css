@@ -68,7 +68,7 @@ section {
 /* Styling for Section 2 */
 #section2 {
   background-color: #F8B500; /* Change the background color as desired */
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
   border: 1.5vw solid #1A1A1A;
 
@@ -251,8 +251,6 @@ margin-left:5vw;
     
   }
    
-</style>
-
 .phone-link{
   color: #1A1A1A;
   font-weight: bold;
@@ -319,7 +317,7 @@ main {
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding: 10px;
   border-radius: 50px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
@@ -475,14 +473,14 @@ margin-left:5vw;
 }
 
 .whatsapp-button img{
-  width: 4vw;
-  height: 4w;
+  width: 10vw;
+  height: 10w;
   margin-right: 0.5vw;    
 }
 
 .instagram-button  img{
-  width: 4.4vw;
-  height: 4.4vw;
+  width: 10vw;
+  height:10vw;
   margin-right: 0.5vw;   
  
 }
@@ -503,7 +501,7 @@ margin-left:5vw;
 
   .slideshow-image {
     max-width: 100%;
-    max-height: 30vw; /* Adjust the height as per your requirement */
+    max-height: 40vw; /* Adjust the height as per your requirement */
 	border: 1vw solid #1A1A1A; 
     
   }
