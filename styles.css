@@ -260,7 +260,10 @@ margin-left:5vw;
 .footer-text{
   font-size: 1vw;
   text-align: center;
-  
+ 
+}
+.divider {
+  border-top: 0.5vw solid #1A1A1A;
 }
 }
 
@@ -526,5 +529,8 @@ margin-left:5vw;
   font-size: 1vw;
   text-align: center;
   
+}
+.divider {
+  border-top: 0.5vw solid #000000;
 }
 } 
