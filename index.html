@@ -1,54 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paws OnTheGo Store</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <img src="logoPOG.jpeg" class="header-image">
-    <h1> PET Outdoor Gear</h1>
-  </header>
-  
-  <!-- Burger menu -->
-  <nav>
-    <div class="burger-menu" onclick="toggleMenu()">
-      <div class="burger-bar"></div>
-      <div class="burger-bar"></div>
-      <div class="burger-bar"></div>
-    </div>
-    <ul class="nav-menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
- 
-  <main>
-    <section id="section1">
-      <h2>About Us</h2>
-      <p class="paragraph0">
-        Tu mascota te acompaña en tus momentos más importantes, también en tus aventuras. Hacemos que vuestras escapadas sean cómodas, seguras e inteligentes. 	 
-      </p>
-      <p class="paragraph0">
-        Nos enfocamos en ofrecer una amplia gama de accesorios innovadores y de alta calidad para garantizar la comodidad, seguridad y bienestar de tu perro, sin importar dónde te encuentres.
-      </p>
-      <p class="paragraph0">
-        Nuestros productos incluyen sistemas de suministro de agua portátiles, dispositivos de localización GPS y clickers de entrenamiento, diseñados para satisfacer las necesidades de los dueños de perros activos y aventureros.
-      </p>
-	</section>
-	
-<style>
+<header>
+  <img src="logoPOG.jpeg" class="header-image">
+  <h1> PET Outdoor Gear</h1>
+</header>
 
+<!-- Burger menu -->
+<nav>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-bar"></div>
+    <div class="burger-bar"></div>
+    <div class="burger-bar"></div>
+  </div>
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+ 
+<section id="section1">
+  <h2>About Us</h2>
+  <p class="paragraph0">
+    Tu mascota te acompaña en tus momentos más importantes, también en tus aventuras. Hacemos que vuestras escapadas sean cómodas, seguras e inteligentes.      
+  </p>
+  <p class="paragraph0">
+    Nos enfocamos en ofrecer una amplia gama de accesorios innovadores y de alta calidad para garantizar la comodidad, seguridad y bienestar de tu perro, sin importar dónde te encuentres.
+  </p>
+  <p class="paragraph0">
+    Nuestros productos incluyen sistemas de suministro de agua portátiles, dispositivos de localización GPS y clickers de entrenamiento, diseñados para satisfacer las necesidades de los dueños de perros activos y aventureros.
+  </p>
+    </section>
+    
+<style>
   .slideshow-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px; /* Adjust the height as per your requirement */
-    
+    height: 100vh; /* Adjust the height as per your requirement */
   }
 
   .slideshow-slide {
@@ -57,42 +52,48 @@
 
   .slideshow-image {
     max-width: 100%;
-    max-height: 500px; /* Adjust the height as per your requirement */
+    max-height: 200px; /* Adjust the height as per your requirement */
   }
-  
-</style>
+
+  .slideshow-text p {
+    font-family: "Arial", sans-serif; /* Specify the desired font family */
+    font-size: 16px; /* Adjust the font size as per your preference */
+    font-weight: bold; /* Specify the desired font weight */
+    color: #333; /* Specify the desired text color */
+  }
+</style>}
 
 
 <section id="section2">
   <h3>Our Products</h3>
   <div class="slideshow-container">
-    <div class="slideshow-slide">
-      <img src="Product1.jpeg" alt="Product 1" class="slideshow-image">
-      <div class="slideshow-text">
-        <p>Clicker de plastico con muñeca adjustable.</p>
-      </div>
-    </div>
+<div class="slideshow-slide">
+  <img src="Product1.jpeg" alt="Product 1" class="slideshow-image">
+  <div class="slideshow-text">
+    <p>Clicker de plastico con muñeca adjustable.</p>
+  </div>
+</div>
   </div>
 </section>
 
 <script>
   var products = [
-    {
-      image: "Product1.jpeg",
-      description: "Clicker de plastico con muñeca adjustable."
-    },
-    {
-      image: "Product2.jpeg",
-      description: "Pet oral Cleanse Spray 50 Ml."
-    },
-    {
-      image: "Product3.jpeg",
-      description: "Mini GPS and BLE tracking Device."
-    },
-    {
-      image: "Product4.jpeg",
-      description: "Bebedor de facil uso de 500 ML."
-    }
+{
+  image: "Product1.jpeg",
+  description: "Clicker de plastico con muñeca adjustable."
+},
+{
+  image: "Product2.jpeg",
+  description: "Pet oral Cleanse Spray 50 Ml."
+},
+{
+  image: "Product3.jpeg",
+  description: "Mini GPS and BLE tracking Device."
+},
+{
+  image: "Product4.jpeg",
+  description: "Bebedor de facil uso de 500 ML."
+}
   ];
 
   var currentIndex = 0;
@@ -100,42 +101,38 @@
   var slideshowText = document.querySelector(".slideshow-text");
 
   setInterval(function() {
-    currentIndex = (currentIndex + 1) % products.length;
-    slideshowImage.src = products[currentIndex].image;
-    slideshowText.innerHTML = "<p>" + products[currentIndex].description + "</p>";
+currentIndex = (currentIndex + 1) % products.length;
+slideshowImage.src = products[currentIndex].image;
+slideshowText.innerHTML = "<p>" + products[currentIndex].description + "</p>";
   }, 2000); // Change image every 5 seconds (5000 milliseconds)
 
 
 </script>
-    <section id="section3">
-      <h4>Contact Us</h4>
-      <p class="paragraph5">Email: pawsonthegoshopcol@gmail.com</p>
-      <p class="paragraph6">Phone: +573219697627</p>
-	  
-	<div class="button-container">
-	<a href="https://api.whatsapp.com/send?phone=+573142257909&text=Hola%20Bienvenido!" class="whatsapp-button">
-	<img src="whatsapplogo.png" alt="WhatsApp Logo">
-	Chatea con Nosotros
-	</a>
-	</div>
-	
-    </section>
+<section id="section3">
+  <h4>Contact Us</h4>
+  <p class="paragraph5">Email: pawsonthegoshopcol@gmail.com</p>
+  <p class="paragraph6">Phone: +573219697627</p>
+      
+    <div class="button-container">
+    <a href="https://api.whatsapp.com/send?phone=+573142257909&text=Hola%20Bienvenido!" class="whatsapp-button">
+    <img src="whatsapplogo.png" alt="WhatsApp Logo">
+    Chatea con Nosotros
+    </a>
+    </div>
     
-    <section id="section4" class="center-image">
-      <img src="logoPOG.jpeg">
-    </section>
+</section>
 
-  </main>
-  
-  <footer>
-    <p class="paragraph7">&copy; 2023 Paws OnTheGo Store. All rights reserved.</p>
-  </footer>
+<section id="section4" class="center-image">
+  <img src="logoPOG.jpeg">
+</section>
 
-  <script>
-    function toggleMenu(){
-      var menu = document.getElementById("menu");
-      menu.classList.toggle("open");
-    }
-  </script>
-</body>
-</html>
+<footer>
+  <p class="paragraph7">&copy; 2023 Paws OnTheGo Store. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu(){
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("open");
+  }
+</script>
