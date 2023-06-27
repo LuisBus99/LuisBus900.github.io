@@ -72,7 +72,31 @@
 </section>
 
 <script>
-  var images = ["Product1.jpeg", "Product2.jpeg", "Product3.jpeg", "Product4.jpeg"];
+
+  var products = [
+    {
+      image: "Product1.jpeg",
+      description: "Clicker de plastico con muñeca adjustable."
+    },
+    {
+      image: "Product2.jpeg",
+      description: "Pet oral Cleanse Spray 50 Ml."
+    },
+    {
+      image: "Product3.jpeg",
+      description: "Mini GPS and BLE tracking Device."
+    },
+    {
+      image: "Product4.jpeg",
+      description: "Bebedor de facil uso de 500 ML."
+    }
+  ];
+
+  var currentIndex = 0;
+  var slideshowImage = document.querySelector(".slideshow-image");
+  var slideshowText = document.querySelector(".slideshow-text");
+
+  
   var currentIndex = 0;
   var slideshowImage = document.querySelector(".slideshow-image");
   var slideshowText = document.querySelector(".slideshow-text");
