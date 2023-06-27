@@ -98,8 +98,8 @@
   var slideshowText = document.querySelector(".slideshow-text");
 
   setInterval(function() {
-    currentIndex = (currentIndex + 1) % images.length;
-    slideshowImage.src = images[currentIndex];
+    currentIndex = (currentIndex + 1) % products.length;
+    slideshowImage.src = products[currentIndex];
     slideshowText.innerHTML = "<p>Product " + (currentIndex + 1) + "</p>";
   }, 5000); // Change image every 5 seconds (5000 milliseconds)
 </script>
