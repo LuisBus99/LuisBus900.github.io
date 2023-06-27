@@ -79,7 +79,8 @@ section {
 
 /* Styling for Section 4 */
 #section4 {
-  background-color: #ffffff; /* Change the background color as desired */
+  background-color: #ffffff;/* Change the background color as desired */
+  text-align: center;
 }
 
 h1
