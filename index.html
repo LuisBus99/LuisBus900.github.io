@@ -43,22 +43,30 @@
 
 <section id="section2">
   <h3>Our Products</h3>
-  <div class="product-container">
-    <div class="product">
+  <div class="slideshow-container">
+    <div class="slideshow-slide">
       <img src="Product1.jpeg" alt="Product 1" class="slideshow-image">
-      <p class="paragraph1">Clicker de plastico con muñeca adjustable.</p>
+      <div class="slideshow-text">
+        <p>Clicker de plastico con muñeca adjustable.</p>
+      </div>
     </div>
-    <div class="product">
+    <div class="slideshow-slide">
       <img src="Product2.jpeg" alt="Product 2" class="slideshow-image">
-      <p class="paragraph2">Pet oral Cleanse Spray 50 Ml.</p>
+      <div class="slideshow-text">
+        <p>Pet oral Cleanse Spray 50 Ml.</p>
+      </div>
     </div>
-    <div class="product">
+    <div class="slideshow-slide">
       <img src="Product3.jpeg" alt="Product 3" class="slideshow-image">
-      <p class="paragraph3">Mini GPS and BLE tracking Device.</p>
+      <div class="slideshow-text">
+        <p>Mini GPS and BLE tracking Device.</p>
+      </div>
     </div>
-    <div class="product">
+    <div class="slideshow-slide">
       <img src="Product4.jpeg" alt="Product 4" class="slideshow-image">
-      <p class="paragraph4">Bebedor de facil uso de 500 ML .</p>
+      <div class="slideshow-text">
+        <p>Bebedor de facil uso de 500 ML.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -67,12 +75,17 @@
   var images = ["Product1.jpeg", "Product2.jpeg", "Product3.jpeg", "Product4.jpeg"];
   var currentIndex = 0;
   var slideshowImages = document.getElementsByClassName("slideshow-image");
+  var slideshowText = document.getElementsByClassName("slideshow-text");
 
   setInterval(function() {
     currentIndex = (currentIndex + 1) % images.length;
     for (var i = 0; i < slideshowImages.length; i++) {
       slideshowImages[i].src = images[currentIndex];
     }
+    for (var i = 0; i < slideshowText.length; i++) {
+      slideshowText[i].style.display = "none";
+    }
+    slideshowText[currentIndex].style.display = "block";
   }, 5000); // Change image every 5 seconds (5000 milliseconds)
 </script>
 
