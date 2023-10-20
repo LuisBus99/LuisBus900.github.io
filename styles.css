@@ -120,12 +120,11 @@ text-align: center;
  
 /* } */
 
-.header-image
+.logo-image
 {
  max-height: 20vw;
-margin-left:5vw; 
+margin-left:10vw; 
 }
-	
 
 .paragraph0{
 	
@@ -477,7 +476,7 @@ margin-left:5vw;
 
 .whatsapp-button img{
   width: 15vw;
-  height: 15vw;
+  height: 15w;
   margin-right: 0.5vw;    
 }
 
