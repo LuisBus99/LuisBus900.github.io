@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -6,8 +7,8 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-  <img src="logoPOG.jpeg" class="header-image">
-  <h1>PET Outdoor Gear</h1>
+  <img src="logoPOG.jpeg" class="logo-image">
+  <h1> PET Outdoor Gear</h1>
 </header>
 
 <!-- Burger menu -->
@@ -26,12 +27,12 @@
 </nav>
 
 <section id="section2">
-  <h3> Nuestros Productos</h3>
+  <h3> Localizador GPS/MFI compatible con IOS</h3>
   <div class="slideshow-container">
 <div class="slideshow-slide">
   <img src="Product1.jpeg" alt="Product 1" class="slideshow-image">
   <div class="slideshow-text">
-    <p>Clicker de plastico con muñeca adjustable.</p>
+    <p>Compatible con tecnología IOS.</p>
   </div>
 </div>
   </div>
@@ -41,20 +42,20 @@
   var products = [
 {
   image: "Product1.jpeg",
-  description: "Clicker de plastico con muñeca adjustable."
+  description: "Compatible con tecnología IOS."
 },
 {
   image: "Product2.jpeg",
-  description: "Pet oral Cleanse Spray 50 Ml."
+  description: "TAG Multiproposito."
 },
 {
-  image: "gpsble.JPG",
-  description: "Dispositivo Bluetooth para tracking."
+  image: "gpsble.jpg",
+  description: "Visualización por app nativa FIND MY y multiples tipos de alertas."
 },
-{
-  image: "Product4.jpeg",
-  description: "Bebedor de facil uso de 500 ML."
-}
+<!-- { -->
+  <!-- <!-- image: "Product4.jpeg", --> -->
+  <!-- <!-- description: "Bebedor de facil uso de 500 ML." -->  -->
+<!-- } -->
   ];
 
   var currentIndex = 0;
@@ -65,7 +66,7 @@
 currentIndex = (currentIndex + 1) % products.length;
 slideshowImage.src = products[currentIndex].image;
 slideshowText.innerHTML = "<p>" + products[currentIndex].description + "</p>";
-  }, 2000); // Change image every 2 seconds (2000 milliseconds)
+  }, 4000); // Change image every 2 seconds (2000 milliseconds)
 
 
 </script>
